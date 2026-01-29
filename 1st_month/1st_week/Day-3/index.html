@@ -1,0 +1,310 @@
+<!-- HTML Lists  -->
+<!DOCTYPE html>
+<html>
+<body>
+<!--  
+HTML LISTS
+HTML lists allow web developers to group a set of related items in lists.
+
+Example
+An unordered HTML list:
+
+Item
+Item
+Item
+Item
+An ordered HTML list:
+
+First item
+Second item
+Third item
+Fourth item
+
+Unordered HTML List
+An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+
+The list items will be marked with bullets (small black circles) by default:
+-->
+
+<p>An Unordered HTML List </p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<br>
+<!--
+
+Unordered HTML List - Choose List Item Marker
+The CSS list-style-type property is used to define the style of the list item marker. It can have one of the following values:
+
+Value	Description
+disc	Sets the list item marker to a bullet (default)
+circle	Sets the list item marker to a circle
+square	Sets the list item marker to a square
+none	The list items will not be marked
+
+Disc
+-->
+<p> Disc </p>
+<ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<br>
+
+<!-- Example -Circle -->
+<p> Circle  </p>
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<br>
+
+<p>square </p>
+<!-- Example - Square -->
+<ul style="list-style-type:square;">
+   <li>Coffe</li>
+   <li>Tea</li>
+   <li>Milk</li>
+</ul>
+<br>
+<!--
+No List Marker
+Example- None
+ -->
+<p>No list maker </p>
+<ul style="list-style-type:none;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<br>
+<!--
+Nested HTML Lists
+Lists can be nested (list inside list):
+ -->
+<p>Nested </p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+<br>
+<!--
+Horizontal List with CSS
+HTML lists can be styled in many different ways with CSS.
+
+One popular way is to style a list horizontally, to create a navigation menu:
+ -->
+<p> Horizontal lists  </p>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
+<br>
+<!--
+Chapter Summary
+Use the HTML <ul> element to define an unordered list
+Use the CSS list-style-type property to define the list item marker
+Use the HTML <li> element to define a list item
+Lists can be nested
+List items can contain other HTML elements
+Use the CSS property float:left to display a list horizontally
+ -->
+
+
+
+
+<!--
+
+Ordered HTML List
+An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+
+The list items will be marked with numbers by default:
+-->
+
+
+<p> An Ordered HTML List </p>
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+
+</body>
+</html>
+<br>
+<!--
+
+Ordered HTML List - The Type Attribute
+The type attribute of the <ol> tag, defines the type of the list item marker:
+
+Type	Description
+type="1"	The list items will be numbered with numbers (default)
+type="A"	The list items will be numbered with uppercase letters
+type="a"	The list items will be numbered with lowercase letters
+type="I"	The list items will be numbered with uppercase roman numbers
+type="i"	The list items will be numbered with lowercase roman numbers
+
+ -->
+
+<!--Numbers -->
+<p> Numbers  </p>
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<br>
+<!-- Uppercase Letters -->
+<p> Uppercase Letters  </p>
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<br>
+
+<!--Lowercase Letters -->
+<p> Lowercase Letters  </p>
+<ol type="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<br>
+
+<!--Uppercase Roman Numbers: -->
+<p> Uppercase Roman Numbers  </p>
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<br>
+
+<!-- Lowercase Roman Numbers -->
+<p> Lowercase Roman Numbers  </p>
+<ol type="i">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<br>
+
+<!--
+
+Control List Counting
+By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the start attribute:
+
+ -->
+<p> Control list counting </p>
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<br>
+<!-- 
+Nested HTML Lists
+Lists can be nested (list inside list)
+-->
+<p> Nested HTML List  </p>
+<ol>
+  <li>Coffee</li>
+  <li>Tea
+    <ol>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ol>
+  </li>
+  <li>Milk</li>
+</ol>
+<br>
+<!--
+Chapter Summary
+Use the HTML <ol> element to define an ordered list
+Use the HTML type attribute to define the numbering type
+Use the HTML <li> element to define a list item
+Lists can be nested
+List items can contain other HTML elements
+ -->
+
+
+
+
+<!-- 
+
+HTML Description LIsts
+HTML also supports description lists.
+A description list is a list of terms, with a description of each term.
+
+The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term:
+
+-->
+<p>HTML Description Lists</p>
+<dl>
+  <dt>Coffe</dt>
+  <dd>- black hot drink </dd>
+      <dd>Milk</dt>
+  <dd>- White cold drink</dd>
+</dl>
+<br>
+
+<!--
+
+HTML List Tags
+Tag	Description
+<ul>	Defines an unordered list
+<ol>	Defines an ordered list
+<li>	Defines a list item
+<dl>	Defines a description list
+<dt>	Defines a term in a description list
+<dd>	Describes the term in a description list
+
+-->
