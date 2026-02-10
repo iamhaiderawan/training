@@ -1,0 +1,15 @@
+.para1 {
+  color: green;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.para2 {
+  color: #ff6600;
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
