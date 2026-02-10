@@ -1,0 +1,38 @@
+body {
+  background-color: #eaeaea;
+  font-family: Arial, sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+/* Common card styling */
+.card {
+  background-color: white;
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #444;
+  border-radius: 8px;
+}
+
+/* Title inside card */
+.card-title {
+  margin-top: 0;
+  color: #0066cc;
+}
+/* Paragraph inside Card */
+.card-text {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Special card with different box model values */
+.special-card {
+  margin-top: 40px;
+  padding: 30px;
+  border: 4px dashed #cc0000;
+}
