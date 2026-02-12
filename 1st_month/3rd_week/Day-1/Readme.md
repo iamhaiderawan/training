@@ -46,18 +46,18 @@ let age = 22; // modern, changeable
 const country = "Pakistan"; // constant, cannot change
 
 🔹 Data Types in JavaScript
-1️⃣ String (text)
+1 String (text)
 let name = "Ali";
 
-2️⃣ Number
+2 Number
 let age = 22;
 let price = 1500.5;
 
-3️⃣ Boolean (true/false)
+3 Boolean (true/false)
 let isStudent = true;
 
-4️⃣ Undefined
+4 Undefined
 let result;
 
-5️⃣ Null
+5 Null
 let data = null;
