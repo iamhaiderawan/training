@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🌤️ Weather Dashboard</h1>
+        <div class="unit-toggle">
+          <button id="c-btn" class="active">°C</button>
+          <button id="f-btn">°F</button>
+        </div>
+      </header>
+
+      <form id="search-form" class="search-bar">
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Search city (e.g. Rawalpindi)"
+          required
+        />
+        <button type="submit">🔍</button>
+        <button type="button" id="geo-btn" title="Use my location">📍</button>
+      </form>
+
+      <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Fetching weather...</p>
+      </div>
+
+      <div id="error" class="error hidden"></div>
+
+      <div id="weather-card" class="weather-card hidden">
+        <div class="city-info">
+          <h2 id="city-name"></h2>
+          <p id="date"></p>
+          <p id="local-time" class="local-time">10:05 AM</p>
+        </div>
+
+        <div class="main-weather">
+          <img id="weather-icon" alt="weather" />
+          <div class="temp-container">
+            <h1 id="temperature" class="temp">0</h1>
+            <span id="temp-unit">°C</span>
+          </div>
+          <p id="description" class="desc"></p>
+        </div>
+
+        <div class="details-grid">
+          <div class="detail-item">
+            <i class="fas fa-thermometer-half"></i>
+            <span>Feels like: <strong id="feels-like"></strong></span>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-droplet"></i>
+            <span>Humidity: <strong id="humidity"></strong>%</span>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-wind"></i>
+            <span>Wind: <strong id="wind"></strong> m/s</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Powered by OpenWeatherMap • Made by Pakistan Airports Authority
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
